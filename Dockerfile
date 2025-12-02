@@ -4,6 +4,7 @@ FROM ubuntu:bionic
 RUN \
 	set -x && \
 	apt-get update && \
+	apt-get -y install debconf && \
 	apt-get -y install software-properties-common && \
 	add-apt-repository ppa:team-gcc-arm-embedded/ppa && \
 	add-apt-repository ppa:jonathonf/tup && \
